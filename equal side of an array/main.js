@@ -58,17 +58,17 @@
 
 function findN(array) {
   reducer = (s, o) => s + o;
-  return array.findIndex(
-    (a, i, arr) =>
-     console.log(arr.slice(0, i).reduce(reducer, 0) ===
-      arr.slice(i + 1).reduce(reducer, 0) )
+  return array.findIndex((a, i, arr) =>
+    console.log(
+      arr.slice(0, i).reduce(reducer, 0) === arr.slice(i + 1).reduce(reducer, 0)
+    )
   );
 }
 
-findN([20,10,-80,10,10,15,35]); // 10
+findN([20, 10, -80, 10, 10, 15, 35]); // 10
 
 //Lessons
-//This one was a hard one for me 
+//This one was a hard one for me
 //i Learnt how slice works so basically i new array is been created on every loop...
 //to get the left side value we sliced the initial arr from the zero on every loop
-//to get the valie of the right side we sliced the arr by the current index + 1 for every loop 
+//to get the valie of the right side we sliced the arr by the current index + 1 for every loop
