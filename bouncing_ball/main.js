@@ -30,11 +30,11 @@ function bouncingBall(h, bounce, window) {
   // your code here
   const cond =
     h > 0 && window < h && bounce > 0 && bounce < 1
-      ? console.log(2 + bouncingBall(h * bounce, bounce, window))
+      ? 2 + bouncingBall(h * bounce, bounce, window)
       : -1;
   return cond;
 }
 
-bouncingBall(3, 0.66, 1.5);
+bouncingBall(3, 0.66, 1.5);  3
 
 //tough kata will revisit later
